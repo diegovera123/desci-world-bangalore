@@ -34,7 +34,7 @@ html {
   --border-highlight: var(--line-width) solid var(--highlight);
 
   /* Shadows */
-  --shadow: var(--highlight) 0px 0px 2em -0.625em;
+  --shadow: var(--ink) 2px 2px 5px;
   --shadow-selected: 2px 2px 1px var(--highlight);
 }
 

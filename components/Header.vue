@@ -9,7 +9,7 @@
         <nav>
           <ul>
             <li><a href="#hero-landing">Home</a></li>
-            <li><a href="#about-section">About Us</a></li>
+            <li><a href="#about-section">About</a></li>
             <li><a href="#speaker-section">Speakers</a></li>
             <li><a href="#contact-section">Contact</a></li>
           </ul>
@@ -21,7 +21,19 @@
 
 <style scoped>
 header {
-  background: var(--color);
+  background: linear-gradient(
+    var(--gradient-direction),
+    var(--color) 35%,
+    hsla(2, 99%, 66%, 1)
+  );
+
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(
+      var(--gradient-direction),
+      var(--highlight),
+      hsla(221, 84%, 17%, 1)
+    );
+  }
 }
 
 mast-head {

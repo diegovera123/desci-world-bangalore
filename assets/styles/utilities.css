@@ -39,3 +39,54 @@
   padding: 0.25em 0;
   max-width: max-content;
 }
+
+.blur-blob-orange {
+  position: relative;
+  max-width: max-content;
+}
+.blur-blob-orange::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  opacity: 0.5;
+  background: var(--color);
+  filter: blur(1.5rem);
+}
+
+.blur-blob-blue {
+  position: relative;
+  max-width: max-content;
+}
+.blur-blob-blue::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 10%;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  opacity: 0.5;
+  background: var(--highlight);
+  filter: blur(1.5rem);
+}
+
+.blur-blob-green {
+  position: relative;
+  max-width: max-content;
+}
+.blur-blob-green::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  opacity: 0.5;
+  background: var(--tertiary-color);
+  filter: blur(1.5rem);
+}
