@@ -36,6 +36,15 @@ html {
   /* Shadows */
   --shadow: var(--ink) 2px 2px 5px;
   --shadow-selected: 2px 2px 1px var(--highlight);
+
+  --clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 0,
+    100% 100%,
+    50px 100%,
+    0 calc(100% - 50px)
+  );
 }
 
 /*@media (prefers-color-scheme: light) {

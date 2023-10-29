@@ -4,6 +4,7 @@
       <text-content>
         <h1 class="booming-voice">Bangalore</h1>
         <h2 class="notice-voice">World of DeSci</h2>
+        <p>Dec 3 - 6, 2023</p>
       </text-content>
     </inner-column>
     <!-- <inner-column> -->
@@ -32,14 +33,17 @@ inner-column {
 
 text-content {
   text-align: center;
-  color: var(--paper);
+  /* color: var(--paper); */
   position: relative;
   isolation: isolate;
   display: grid;
   justify-content: center;
   padding: var(--space-xl) 0;
+  border-right: 5px solid var(--highlight);
 
-  background: hsla(calc(var(--hue) + 195), 90%, 60%, 0.5);
+  background: hsla(calc(var(--hue) + 195), 90%, 90%, 0.8);
+
+  clip-path: var(--clip-path);
 
   @media (prefers-color-scheme: dark) {
     background: hsla(var(--hue), 100%, 60%, 0.8);
