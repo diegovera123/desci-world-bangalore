@@ -3,8 +3,8 @@
     <inner-column>
       <text-content>
         <h1 class="booming-voice">Bangalore</h1>
-        <h2 class="notice-voice">World of DeSci</h2>
-        <p>Dec 3 - 6, 2023</p>
+        <h2 class="firm-voice">World of DeSci</h2>
+        <p class="notice-voice">Dec 3 - 6, 2023</p>
       </text-content>
     </inner-column>
     <!-- <inner-column> -->
@@ -47,6 +47,7 @@ text-content {
 
   @media (prefers-color-scheme: dark) {
     background: hsla(var(--hue), 100%, 60%, 0.8);
+    border-right: 5px solid var(--highlight);
   }
 }
 </style>

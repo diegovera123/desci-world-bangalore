@@ -16,11 +16,16 @@
 <style scoped>
 section.about {
   padding: var(--space-l) 0;
-  background: linear-gradient(0, var(--color) 35%, hsla(2, 99%, 66%, 1));
+  background: linear-gradient(
+    0,
+    var(--paper),
+    var(--color),
+    hsla(2, 99%, 66%, 1)
+  );
   text-align: center;
 
   @media (prefers-color-scheme: dark) {
-    background: linear-gradient(0, var(--highlight), hsla(221, 84%, 17%, 1));
+    background: linear-gradient(0, var(--paper), hsla(222, 84%, 14%, 1));
   }
 }
 h2 {

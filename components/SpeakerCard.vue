@@ -12,33 +12,35 @@ const props = defineProps({
     <picture>
       <img :src="speaker.image" :alt="`Picture of ${speaker.name}`" />
     </picture>
-    <h3 class="firm-voice">
-      {{ speaker.name }}
-    </h3>
-    <p>
-      {{ speaker.bio }}
-    </p>
+    <text-content>
+      <h3 class="firm-voice">
+        {{ speaker.name }}
+      </h3>
+      <p>
+        {{ speaker.bio }}
+      </p>
+    </text-content>
   </li>
 </template>
 
 <style scoped>
 .speaker-card {
-  box-shadow: var(--shadow);
-  position: relative;
-  --top: 100px;
+}
 
-  padding: var(--space-xl) var(--space-s);
-  padding-top: calc(var(--top) + var(--space-3xl));
+text-content {
+  box-shadow: var(--shadow);
+  padding: var(--space-l) var(--space-s);
+  padding-top: var(--space-2xl);
 }
 
 picture {
   aspect-ratio: 1;
   border-radius: 50%;
-  max-width: 70%;
+  max-width: 200px;
 
-  position: absolute;
-  top: calc(var(--top) * -1);
-  left: 0;
+  position: relative;
+  top: 50px;
+  left: -15px;
   box-shadow: var(--shadow);
 }
 </style>

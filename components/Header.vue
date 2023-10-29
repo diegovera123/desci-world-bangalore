@@ -3,7 +3,7 @@
     <inner-column>
       <mast-head>
         <picture class="logo">
-          <img src="/images/square.jpg" alt="" />
+          <img src="/images/lotus.svg" alt="" />
         </picture>
 
         <nav>
@@ -39,7 +39,13 @@ header {
 mast-head {
   display: flex;
   justify-content: space-between;
+  gap: var(--space-l);
   align-items: center;
+
+  @media (max-width: 500px) {
+    flex-direction: column-reverse;
+    justify-items: center;
+  }
 }
 
 picture.logo {
@@ -47,10 +53,19 @@ picture.logo {
   max-width: 50px;
   border-radius: 50%;
   overflow: hidden;
+  transform: scale(3);
+  transform-origin: center;
 }
 
 nav ul {
   display: flex;
   gap: var(--space-l);
+  justify-content: space-between;
+}
+
+nav a {
+  @media (max-width: 500px) {
+    font-size: var(--step--1);
+  }
 }
 </style>

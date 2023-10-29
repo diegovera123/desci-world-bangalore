@@ -18,7 +18,10 @@ const speakers = (await queryContent("speakers").findOne()).body;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: var(--space-l);
-  row-gap: 150px;
   padding-top: 150px;
+
+  @media (min-width: 770px) {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
 </style>
