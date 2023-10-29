@@ -25,6 +25,17 @@ const props = defineProps({
 
 <style scoped>
 .speaker-card {
+  position: relative;
+}
+.speaker-card::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 200px;
+  aspect-ratio: 1;
+  border-top: 5px solid var(--highlight);
+  border-bottom: 5px solid var(--highlight);
 }
 
 text-content {

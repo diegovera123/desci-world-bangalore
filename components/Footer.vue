@@ -9,7 +9,7 @@
 </template>
 <style scoped>
 footer {
-  background: var(--tertiary-color);
+  background: var(--tertiary-color-darker);
 }
 
 picture.logo {

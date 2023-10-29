@@ -23,15 +23,16 @@
 header {
   background: linear-gradient(
     var(--gradient-direction),
-    var(--color) 35%,
-    hsla(2, 99%, 66%, 1)
+    var(--paper),
+    var(--color),
+    hsla(1, 100%, 66%, 1)
   );
 
   @media (prefers-color-scheme: dark) {
     background: linear-gradient(
       var(--gradient-direction),
-      var(--highlight),
-      hsla(221, 84%, 17%, 1)
+      var(--paper),
+      hsla(226, 83%, 17%, 1)
     );
   }
 }
@@ -55,6 +56,10 @@ picture.logo {
   overflow: hidden;
   transform: scale(3);
   transform-origin: center;
+
+  @media (prefers-color-scheme: dark) {
+    filter: invert(1);
+  }
 }
 
 nav ul {

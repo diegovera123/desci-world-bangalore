@@ -1,7 +1,7 @@
 <template>
   <section id="about-section" class="about">
     <inner-column>
-      <h2 class="loud-voice">About</h2>
+      <h2 class="booming-voice">About</h2>
       <p class="notice-voice">
         Lorem ipDo cupidatat non proident minim culpa aliqua esse elit ea
         tempor. Elit officia aliqua quis voluptate consequat aute mollit sint.
