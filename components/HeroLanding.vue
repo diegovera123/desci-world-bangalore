@@ -38,6 +38,7 @@ inner-column {
 
   @media (prefers-color-scheme: dark) {
     padding-top: unset;
+    background: unset;
   }
 }
 

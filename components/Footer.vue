@@ -5,6 +5,11 @@
         <img src="/images/square.jpg" alt="" />
       </picture>
     </inner-column>
+    <section>
+      <inner-column>
+        <h2 class="loud-voice">Contact</h2>
+      </inner-column>
+    </section>
   </footer>
 </template>
 <style scoped>
