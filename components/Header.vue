@@ -53,8 +53,7 @@ picture.logo {
   aspect-ratio: 1;
   max-width: 50px;
   border-radius: 50%;
-  overflow: hidden;
-  transform: scale(3);
+  transform: scale(2);
   transform-origin: center;
 
   @media (prefers-color-scheme: dark) {
