@@ -73,7 +73,7 @@ html {
 }
 @media (prefers-color-scheme: dark) {
   html {
-    --paper: var(--black);
+    /* --paper: var(--black); */
     --ink: var(--white);
   }
 }
