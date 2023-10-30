@@ -26,6 +26,49 @@ div.actions {
   }
 }
 
+:is(a, button).text {
+  color: var(--ink);
+  text-decoration: none;
+  padding: 0.25em;
+  position: relative;
+}
+
+:is(a, button).text::before {
+  content: "";
+  position: absolute;
+  height: var(--line-width);
+  width: 50%;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--paper);
+  transition: 0.2s;
+}
+
+:is(a, button).text:hover::before {
+  width: 100%;
+}
+
+.white-underline {
+  position: relative;
+}
+
+.white-underline::before {
+  content: "";
+  position: absolute;
+  height: var(--line-width);
+  width: 50%;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--paper);
+  transition: 0.2s;
+}
+
+.white-underline:hover::before {
+  width: 100%;
+}
+
 /* scrollbar */
 * {
   -ms-overflow-style: none; /* IE and Edge */
@@ -45,7 +88,7 @@ div.actions {
 
 /* / This part is for the thumb (the part you drag) / */
 ::-webkit-scrollbar-thumb {
-  background: var(--gradient-color);
+  background: var(--highlight);
   border-radius: var(--corners);
 }
 

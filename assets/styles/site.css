@@ -29,3 +29,17 @@ body {
 #__nuxt {
   display: contents;
 }
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(30px) translatex(-10px);
+  }
+
+  100% {
+    transform: translatey(0px) translatex(10px);
+  }
+}

@@ -16,7 +16,10 @@
 }
 
 .points {
-  background-image: var(--points);
+  background: radial-gradient(rgb(41, 23, 32) 1px, transparent 1px),
+    radial-gradient(rgb(41, 23, 32) 1px, var(--color) 1px);
+  background-position: 0px 0px, 30px 30px;
+  background-size: 60px 60px;
 }
 
 /* borders */
