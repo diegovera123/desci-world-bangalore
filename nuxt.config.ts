@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devServer: {
-    //  port: 3005,
+    port: 3005,
   },
 
   devtools: { enabled: false },

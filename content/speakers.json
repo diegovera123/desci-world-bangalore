@@ -2,31 +2,31 @@
   {
     "name": "Speaker 1",
     "image": "/images/square.jpg",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatem, voluptatum, quibusdam, quia voluptas quod quos quae voluptatibus quidem doloremque doloribus quas.",
+    "role": "Blockchain Expert",
     "twitter": "http://twitter.com"
   },
   {
     "name": "Speaker 2",
     "image": "/images/square.jpg",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatem, voluptatum, quibusdam, quia voluptas quod quos quae voluptatibus quidem doloremque doloribus quas.",
+    "role": "Blockchain Expert",
     "twitter": "http://twitter.com"
   },
   {
     "name": "Speaker 3",
     "image": "/images/square.jpg",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatem, voluptatum, quibusdam, quia voluptas quod quos quae voluptatibus quidem doloremque doloribus quas.",
+    "role": "Blockchain Expert",
     "twitter": "http://twitter.com"
   },
   {
     "name": "Speaker 4",
     "image": "/images/square.jpg",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatem, voluptatum, quibusdam, quia voluptas quod quos quae voluptatibus quidem doloremque doloribus quas.",
+    "role": "Blockchain Expert",
     "twitter": "http://twitter.com"
   },
   {
     "name": "Speaker 5",
     "image": "/images/square.jpg",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatem, voluptatum, quibusdam, quia voluptas quod quos quae voluptatibus quidem doloremque doloribus quas.",
+    "role": "Blockchain Expert",
     "twitter": "http://twitter.com"
   }
 ]
