@@ -1,68 +1,106 @@
+<script setup>
+import fitty from "fitty";
+
+const bangloreRef = ref(null);
+const DeSciWorldRef = ref(null);
+const YearRef = ref(null);
+const DecemberRef = ref(null);
+const dateRef = ref(null);
+
+onMounted(() => {
+  fitty(bangloreRef.value);
+  fitty(DeSciWorldRef.value);
+  fitty(YearRef.value, {
+    maxSize: 1600,
+  });
+  fitty(DecemberRef.value);
+  fitty(dateRef.value, {
+    maxSize: 1600,
+  });
+});
+</script>
+
 <template>
   <section id="hero-landing" class="hero-landing">
     <inner-column>
-      <text-content>
-        <h1 class="booming-voice">Bangalore</h1>
-        <h2 class="firm-voice">World of DeSci • Dec 3 - 6, 2023</h2>
-      </text-content>
-      <div class="actions">
-        <a href="#about-section" class="button">Learn More</a>
-        <a href="#contact-section" class="button">Contact Us</a>
+      <div>
+        <h1 class="booming-voice" ref="bangloreRef">Bangalore</h1>
+      </div>
+      <div>
+        <h1 class="booming-voice" ref="DeSciWorldRef">DeSciWorld</h1>
+      </div>
+      <div>
+        <h2 class="booming-voice" ref="YearRef">23</h2>
+      </div>
+      <div>
+        <h2 class="booming-voice" ref="DecemberRef">December</h2>
+      </div>
+      <div>
+        <h2 class="booming-voice" ref="dateRef">3 - 6</h2>
       </div>
     </inner-column>
-    <!-- <inner-column> -->
-    <!-- <picture>
-      <img src="/images/hero-night.png" alt="" />
-    </picture> -->
-    <!-- </inner-column> -->
+    <piture class="float quadrant">
+      <img src="/images/bangalore-building.png" alt="" />
+    </piture>
+    <piture class="float square">
+      <img src="/images/star.svg" alt="" />
+    </piture>
+    <piture class="float vertical">
+      <img src="/images/bangalore-vertical.jpg" alt="" />
+    </piture>
   </section>
 </template>
 
 <style scoped>
-.hero-landing {
-  background: url("/images/hero-day.png") no-repeat center 0px;
-  background-color: hsla(2, 100%, 66%, 1);
-  background-size: cover;
-  min-height: calc(100vmax + 00px);
+section {
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
 
-  @media (prefers-color-scheme: dark) {
-    background: url("/images/hero-night.jpg") no-repeat top center;
-    background-size: cover;
-  }
+  position: relative;
 }
 
 inner-column {
-  /* padding-top: var(--space-3xl); */
-  background: hsla(calc(var(--hue) + 195), 90%, 90%, 0.8);
-  border-radius: var(--corners);
-
-  @media (prefers-color-scheme: dark) {
-    padding-top: unset;
-    background: unset;
-  }
+  max-width: unset;
 }
 
-text-content {
-  text-align: center;
-  /* color: var(--paper); */
-  position: relative;
-  isolation: isolate;
-  display: grid;
-  justify-content: center;
-  text-wrap: balance;
-  /* padding: var(--space-xl) 0; */
-
-  /* clip-path: var(--clip-path); */
-
-  @media (prefers-color-scheme: dark) {
-    background: none;
-    /* color: var(--paper); */
-    /* -webkit-text-stroke-width: 2px; */
-    /* -webkit-text-stroke-color: var(--highlight-darker); */
-  }
+h2 {
+  color: var(--color);
 }
 
-div.actions {
-  margin-top: var(--space-l);
+.float {
+  position: absolute;
+
+  /* filter: grayscale(1); */
+  mix-blend-mode: luminosity;
+  width: clamp(30px, 20vw, 300px);
+  z-index: 1;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.float img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.quadrant {
+  top: 20px;
+  right: 5vw;
+  animation: float 10s ease-in-out infinite alternate;
+}
+
+.square {
+  aspect-ratio: 1 / 1;
+  top: 60%;
+  right: 10%;
+  width: clamp(50px, 25vw, 400px);
+}
+.vertical {
+  top: 25%;
+  left: 10%;
+  width: clamp(30px, 30vw, 250px);
+  animation: float 10s ease-in-out infinite alternate;
+  /* border-radius: 200px; */
 }
 </style>

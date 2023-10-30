@@ -16,8 +16,8 @@ const props = defineProps({
       <h3 class="firm-voice">
         {{ speaker.name }}
       </h3>
-      <p>
-        {{ speaker.bio }}
+      <p class="notice-voice">
+        {{ speaker.role }}
       </p>
     </text-content>
   </li>
@@ -26,32 +26,22 @@ const props = defineProps({
 <style scoped>
 .speaker-card {
   position: relative;
-}
-.speaker-card::after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 200px;
-  aspect-ratio: 1;
-  border-top: 5px solid var(--highlight);
-  border-bottom: 5px solid var(--highlight);
+  display: grid;
+  gap: var(--space-s);
+  justify-items: center;
 }
 
 text-content {
-  box-shadow: var(--shadow);
-  padding: var(--space-l) var(--space-s);
-  padding-top: var(--space-2xl);
+  text-align: center;
+}
+
+p {
+  font-size: var(--step-1);
 }
 
 picture {
   aspect-ratio: 1;
   border-radius: 50%;
-  max-width: 200px;
-
-  position: relative;
-  top: 50px;
-  left: -15px;
-  box-shadow: var(--shadow);
+  max-width: 150px;
 }
 </style>

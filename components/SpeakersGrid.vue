@@ -14,11 +14,15 @@ const speakers = (await queryContent("speakers").findOne()).body;
 </template>
 
 <style scoped>
+h2 {
+  text-align: center;
+}
+
 .speakers-grid {
   display: grid;
+  margin-top: var(--space-xl);
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: var(--space-l);
-  padding-top: 150px;
+  gap: var(--space-2xl);
 
   @media (min-width: 770px) {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
