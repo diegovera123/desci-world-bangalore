@@ -3,6 +3,7 @@
   <main>
     <HeroLanding />
     <AboutSection />
+    <MotivateSection />
     <EventSection />
     <SpeakersGrid />
   </main>

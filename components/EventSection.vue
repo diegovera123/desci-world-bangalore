@@ -26,6 +26,7 @@ const events = (await queryContent("events").findOne()).body;
           </NuxtLink>
         </li>
       </ul>
+      <NuxtLink to="#" class="button firm-voice"> View Full Schedule </NuxtLink>
     </inner-column>
   </section>
 </template>
@@ -37,6 +38,10 @@ h2 {
 ul {
   display: grid;
   margin-top: var(--space-xl);
+}
+
+.button {
+  margin: var(--space-xl) auto;
 }
 
 li {

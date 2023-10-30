@@ -10,20 +10,30 @@ div.actions {
 
 :is(a, button).button {
   font-family: var(--font2);
-  font-size: var(--step-0);
 
   white-space: nowrap;
-  background: var(--color);
-  color: var(--paper);
+  background: var(--black);
+  color: var(--white);
+  border-radius: 500px;
 
-  padding: 1.25em 1em;
+  padding: 0.5em;
 
-  border-right: 5px solid var(--highlight);
-  clip-path: var(--clip-path);
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cpath%20d%3D%22M%2024%2012%20L%2044%2032%20L%2024%2052%22%20fill%3D%22transparent%22%20stroke-width%3D%226%22%20stroke%3D%22%23FFFFFF%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-dasharray%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  transition: padding-left 0.5s, background-position 0.2s 0.05s;
 
   @media (max-width: 768px) {
-    font-size: var(--step--1);
+    /* font-size: var(--step--1); */
   }
+}
+
+.button:hover {
+  background-repeat: unset;
+  background-position: center right -3em;
+  background-blend-mode: luminosity;
+  padding-left: 30%;
 }
 
 :is(a, button).text {

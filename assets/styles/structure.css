@@ -10,7 +10,7 @@ inner-column {
   max-width: 1100px; /* could be a variable in settings */
   margin-right: auto;
   margin-left: auto;
-  padding: var(--space-l) var(--space-s); /* a loose default */
+  padding: var(--space-2xl) var(--space-s); /* a loose default */
 }
 
 inner-column.wide {
