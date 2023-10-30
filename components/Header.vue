@@ -1,11 +1,7 @@
 <template>
   <header>
-    <inner-column>
+    <inner-column class="wide">
       <mast-head>
-        <picture class="logo">
-          <img src="/images/lotus.svg" alt="" />
-        </picture>
-
         <nav>
           <ul>
             <li><a href="#hero-landing">Home</a></li>
@@ -21,44 +17,11 @@
 
 <style scoped>
 header {
-  background: linear-gradient(
-    var(--gradient-direction),
-    var(--paper),
-    var(--color),
-    hsla(1, 100%, 66%, 1)
-  );
-
-  @media (prefers-color-scheme: dark) {
-    background: linear-gradient(
-      var(--gradient-direction),
-      var(--paper),
-      hsla(226, 83%, 17%, 1)
-    );
-  }
+  background: var(--black);
 }
 
-mast-head {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--space-l);
-  align-items: center;
-
-  @media (max-width: 500px) {
-    flex-direction: column-reverse;
-    justify-items: center;
-  }
-}
-
-picture.logo {
-  aspect-ratio: 1;
-  max-width: 50px;
-  border-radius: 50%;
-  transform: scale(2);
-  transform-origin: center;
-
-  @media (prefers-color-scheme: dark) {
-    filter: invert(1);
-  }
+inner-column {
+  padding: var(--space-s); /* a loose default */
 }
 
 nav ul {
@@ -68,6 +31,8 @@ nav ul {
 }
 
 nav a {
+  color: var(--white);
+
   @media (max-width: 500px) {
     font-size: var(--step--1);
   }
