@@ -32,7 +32,7 @@ const socials = ref([
         India's rich culture intertwines with cutting-edge technology.
       </p>
       <ul>
-        <li v-for="social in socials">
+        <li v-for="social in socials" class="social">
           <p class="notice-voice">
             <NuxtLink class="text" :to="social.link">{{
               social.name
@@ -79,5 +79,9 @@ ul {
   @media (min-width: 770px) {
     display: grid;
   }
+}
+
+li.social {
+  filter: invert(1);
 }
 </style>
