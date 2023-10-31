@@ -1,0 +1,108 @@
+<script setup></script>
+
+<template>
+  <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 285 285"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xml:space="preserve"
+    xmlns:serif="http://www.serif.com/"
+    style="
+      fill-rule: evenodd;
+      clip-rule: evenodd;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 1.5;
+    "
+  >
+    <g transform="matrix(1,0,0,1,-8109.65,-2754.97)">
+      <g transform="matrix(1,0,0,1.89905,8084,-1044.15)">
+        <g transform="matrix(1,0,0,0.526579,-8084,549.825)">
+          <path
+            d="M8251.68,2755.97L8251.68,3038.04"
+            style="
+              fill: none;
+
+              stroke-width: 2px;
+              stroke-dasharray: 2, 0.1, 0, 0, 0, 0;
+            "
+          />
+        </g>
+        <g
+          transform="matrix(0.866025,0.263289,-0.5,0.456031,-5529.98,-1418.38)"
+        >
+          <path
+            d="M8251.68,2755.97L8251.68,3038.04"
+            style="
+              fill: none;
+
+              stroke-width: 2px;
+              stroke-dasharray: 2, 0.1, 0, 0, 0, 0;
+            "
+          />
+        </g>
+        <g
+          transform="matrix(0.5,0.456031,-0.866025,0.263289,-1449.28,-2450.44)"
+        >
+          <path
+            d="M8251.68,2755.97L8251.68,3038.04"
+            style="
+              fill: none;
+
+              stroke-width: 2px;
+              stroke-dasharray: 2, 0.1, 0, 0, 0, 0;
+            "
+          />
+        </g>
+        <g
+          transform="matrix(2.10942e-15,0.526579,-1,1.08247e-15,3064.69,-2269.84)"
+        >
+          <path
+            d="M8251.68,2755.97L8251.68,3038.04"
+            style="
+              fill: none;
+
+              stroke-width: 2px;
+              stroke-dasharray: 2, 0.1, 0, 0, 0, 0;
+            "
+          />
+        </g>
+        <g
+          transform="matrix(-0.5,0.456031,-0.866025,-0.263289,6802.41,-924.943)"
+        >
+          <path
+            d="M8251.68,2755.97L8251.68,3038.04"
+            style="
+              fill: none;
+
+              stroke-width: 2px;
+              stroke-dasharray: 2, 0.1, 0, 0, 0, 0;
+            "
+          />
+        </g>
+        <g
+          transform="matrix(-0.866025,0.263289,-0.5,-0.456031,8762.36,1223.87)"
+        >
+          <path
+            d="M8251.68,2755.97L8251.68,3038.04"
+            style="
+              fill: none;
+
+              stroke-width: 2px;
+              stroke-dasharray: 2, 0.1, 0, 0, 0, 0;
+            "
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+</template>
+
+<style scoped>
+path {
+  stroke: var(--highlight-dark);
+}
+</style>

@@ -26,7 +26,7 @@ const socials = ref([
 <template>
   <section id="about-section" class="about points">
     <inner-column>
-      <h2 class="loud-voice">DeSciWorld Unites in Bengaluru</h2>
+      <h2 class="loud-voice">Decentralised Science showcases in Bengaluru</h2>
       <p class="attention-voice">
         Join us for an exhilarating experience at DeSci Event, Bangalore where
         India's rich culture intertwines with cutting-edge technology.

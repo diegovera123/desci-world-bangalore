@@ -7,7 +7,7 @@ const YearRef = ref(null);
 const DecemberRef = ref(null);
 const dateRef = ref(null);
 
-onMounted(() => {
+function fitAll() {
   fitty(bangloreRef.value);
   fitty(DeSciWorldRef.value);
   fitty(YearRef.value, {
@@ -17,6 +17,10 @@ onMounted(() => {
   fitty(dateRef.value, {
     maxSize: 1600,
   });
+}
+
+onMounted(() => {
+  fitAll();
 });
 </script>
 
@@ -24,26 +28,26 @@ onMounted(() => {
   <section id="hero-landing" class="hero-landing">
     <inner-column>
       <div>
-        <h1 class="booming-voice" ref="bangloreRef">Bangalore</h1>
+        <h1 class="booming-voice fitty" ref="DeSciWorldRef">World of DeSci</h1>
       </div>
       <div>
-        <h1 class="booming-voice" ref="DeSciWorldRef">DeSciWorld</h1>
+        <h1 class="booming-voice colored fitty" ref="bangloreRef">Bangalore</h1>
       </div>
       <div>
-        <h2 class="booming-voice" ref="YearRef">23</h2>
+        <h2 class="booming-voice colored fitty" ref="YearRef">23</h2>
       </div>
       <div>
-        <h2 class="booming-voice" ref="DecemberRef">December</h2>
+        <h2 class="booming-voice fitty" ref="dateRef">3 - 6</h2>
       </div>
       <div>
-        <h2 class="booming-voice" ref="dateRef">3 - 6</h2>
+        <h2 class="booming-voice fitty" ref="DecemberRef">December</h2>
       </div>
     </inner-column>
     <piture class="float quadrant">
       <img src="/images/bangalore-building.png" alt="" />
     </piture>
     <piture class="float square">
-      <img src="/images/star.svg" alt="" />
+      <StarDecoration />
     </piture>
     <piture class="float vertical">
       <img src="/images/bangalore-vertical.jpg" alt="" />
@@ -61,10 +65,20 @@ section {
 }
 
 inner-column {
-  max-width: unset;
+  @media (min-width: 770px) {
+    max-width: 80%;
+  }
 }
 
-h2 {
+.booming-voice {
+  font-size: var(--step-3);
+}
+.fitty {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.colored {
   color: var(--color);
 }
 
@@ -72,7 +86,6 @@ h2 {
   position: absolute;
 
   /* filter: grayscale(1); */
-  mix-blend-mode: luminosity;
   width: clamp(30px, 20vw, 300px);
   z-index: 1;
   overflow: hidden;
@@ -85,8 +98,10 @@ h2 {
 }
 
 .quadrant {
-  top: 20px;
-  right: 5vw;
+  mix-blend-mode: luminosity;
+
+  top: 10%;
+  right: 20%;
   animation: float 10s ease-in-out infinite alternate;
 }
 
@@ -97,9 +112,11 @@ h2 {
   width: clamp(50px, 25vw, 400px);
 }
 .vertical {
+  mix-blend-mode: luminosity;
+
   top: 25%;
   left: 10%;
-  width: clamp(30px, 30vw, 250px);
+  width: clamp(10px, 25vw, 250px);
   animation: float 10s ease-in-out infinite alternate;
   /* border-radius: 200px; */
 }

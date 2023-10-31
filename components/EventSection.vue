@@ -4,6 +4,9 @@ const events = (await queryContent("events").findOne()).body;
 
 <template>
   <section id="event-section" class="events points">
+    <picture class="charka-decoration">
+      <ChakraDecoration />
+    </picture>
     <inner-column>
       <h2 class="firm-voice">Events</h2>
       <ul class="events-grid">
@@ -20,9 +23,7 @@ const events = (await queryContent("events").findOne()).body;
             </p>
           </text-content>
           <NuxtLink :to="event.link">
-            <picture class="right-arrow">
-              <RightArrow />
-            </picture>
+            <RightArrow class="right-arrow" />
           </NuxtLink>
         </li>
       </ul>
@@ -32,6 +33,19 @@ const events = (await queryContent("events").findOne()).body;
 </template>
 
 <style scoped>
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.charka-decoration {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 70px;
+  /* opacity: 0.7; */
+}
 h2 {
   text-align: center;
 }
@@ -66,7 +80,7 @@ p + p {
   margin-top: unset;
 }
 
-picture {
+:deep(.right-arrow) {
   max-width: 2rem;
 }
 </style>

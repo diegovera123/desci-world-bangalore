@@ -34,9 +34,8 @@ html {
 
 .booming-voice {
   font-family: var(--font1);
-  font-size: var(--step-5);
+  font-size: var(--step-4);
   font-weight: var(--weight-heavy);
-  line-height: 1.1;
 }
 
 .loud-voice {
