@@ -89,7 +89,7 @@ h2 + p {
 }
 
 li.social {
-  filter: invert(1);
+  /* filter: invert(1); */
   justify-self: start;
 }
 
