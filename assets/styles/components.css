@@ -93,12 +93,13 @@ div.actions {
 /* / This part is for the track (the part that the thumb slides across) / */
 ::-webkit-scrollbar-track {
   box-shadow: var(--shadow);
+  background: var(--black);
   border-radius: var(--corners);
 }
 
 /* / This part is for the thumb (the part you drag) / */
 ::-webkit-scrollbar-thumb {
-  background: var(--highlight);
+  background: var(--color);
   border-radius: var(--corners);
 }
 
