@@ -7,7 +7,10 @@
             <li><a href="#hero-landing">Home</a></li>
             <li><a href="#about-section">About</a></li>
             <li><a href="#speaker-section">Speakers</a></li>
-            <li><a href="#contact-section">Contact</a></li>
+            <li><a href="#register">Register</a></li>
+            <li class="toggle">
+              <ToggleLight />
+            </li>
           </ul>
         </nav>
       </mast-head>
@@ -35,6 +38,12 @@ nav a {
 
   @media (max-width: 500px) {
     font-size: var(--step--1);
+  }
+}
+
+.toggle {
+  @media (max-width: 760px) {
+    display: none;
   }
 }
 </style>
