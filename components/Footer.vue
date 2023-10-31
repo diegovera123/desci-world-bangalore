@@ -2,7 +2,7 @@
   <footer>
     <section>
       <inner-column>
-        <h2 class="loud-voice">Contact</h2>
+        <ToggleLight />
       </inner-column>
     </section>
   </footer>
