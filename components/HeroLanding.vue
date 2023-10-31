@@ -31,7 +31,7 @@ onMounted(() => {
         <h1 class="booming-voice fitty" ref="DeSciWorldRef">World of DeSci</h1>
       </div>
       <div>
-        <h1 class="booming-voice colored fitty" ref="bangloreRef">Bangalore</h1>
+        <h1 class="booming-voice colored fitty" ref="bangloreRef">Bengaluru</h1>
       </div>
       <div>
         <h2 class="booming-voice colored fitty" ref="YearRef">23</h2>
@@ -103,6 +103,7 @@ inner-column {
   top: 10%;
   right: 20%;
   animation: float 10s ease-in-out infinite alternate;
+  animation-delay: -3s;
 }
 
 .square {

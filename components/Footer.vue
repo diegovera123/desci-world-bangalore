@@ -9,6 +9,6 @@
 </template>
 <style scoped>
 footer {
-  background: var(--tertiary-color-darker);
+  background: var(--highlight-darker);
 }
 </style>

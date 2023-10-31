@@ -3,7 +3,7 @@ const speakers = (await queryContent("speakers").findOne()).body;
 </script>
 
 <template>
-  <section id="speaker-section" class="speakers points-white">
+  <section id="speaker-section" class="speakers poifnts-white">
     <inner-column class="wide">
       <h2 class="loud-voice">Speakers</h2>
       <ul class="speakers-grid">

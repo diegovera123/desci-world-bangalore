@@ -1,27 +1,34 @@
 <script setup>
-const image = ref(false);
+const props = defineProps(["text", "image"]);
 </script>
 
 <template>
   <section class="points">
-    <h2 class="loud-voice">WHERE SCIENCE MEETS THE FUTURE.</h2>
+    <inner-column class="ultra-wide">
+      <h2 class="loud-voice">{{ text }}</h2>
 
-    <picture class="splash">
-      <img src="/images/bangalore-motivate.jpg" alt="" />
-    </picture>
+      <picture class="splash">
+        <img :src="`/images/${image}.jpg`" alt="" />
+      </picture>
+    </inner-column>
   </section>
 </template>
 
 <style scoped>
 section {
-  height: 100vmin;
-
+  /* padding: var(--space-s); */
+  padding: var(--space-xl) 0;
+}
+inner-column {
   display: grid;
   place-items: center;
   text-align: center;
-
   position: relative;
   isolation: isolate;
+  aspect-ratio: 16 / 9;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 picture {
@@ -31,12 +38,32 @@ picture {
   z-index: -1;
   mix-blend-mode: luminosity;
   filter: grayscale(1);
-  max-height: 100%;
+  height: auto;
+  width: 100%;
+  max-height: calc(100% - var(--space-s));
   max-width: calc(100% - var(--space-s));
   opacity: 0.8;
+
+  aspect-ratio: 16 / 9;
+
+  @media (max-width: 768px) {
+    max-height: unset;
+    max-width: unset;
+    border-radius: 0;
+    width: 100vw;
+  }
+}
+
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 h2 {
   text-wrap: balance;
+  @media (max-width: 768px) {
+    font-size: var(--step-3);
+  }
 }
 </style>
