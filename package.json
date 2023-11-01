@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.9.0",
-    "fitty": "^2.3.7"
+    "fitty": "^2.3.7",
+    "gsap": "^3.12.2"
   }
 }
