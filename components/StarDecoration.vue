@@ -102,7 +102,21 @@
 </template>
 
 <style scoped>
-path {
-  stroke: var(--highlight-dark);
+@media (prefers-color-scheme: dark) {
+  path {
+    stroke: var(--highlight);
+  }
+  [data-theme="light"] path {
+    stroke: var(--black);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  path {
+    stroke: var(--black);
+  }
+  [data-theme="dark"] path {
+    stroke: var(--highlight);
+  }
 }
 </style>
