@@ -5,6 +5,7 @@
         <ToggleLight />
       </inner-column>
     </section>
+    <SpashAnimation />
   </footer>
 </template>
 <style scoped>
