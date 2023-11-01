@@ -62,6 +62,7 @@ section {
   text-align: center;
 
   position: relative;
+  isolation: isolate;
 }
 
 inner-column {

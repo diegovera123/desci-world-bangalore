@@ -3,9 +3,11 @@ const props = defineProps(["text", "image"]);
 </script>
 
 <template>
-  <section class="points">
+  <section class="points motivate-section">
     <inner-column class="ultra-wide">
-      <h2 class="loud-voice">{{ text }}</h2>
+      <div>
+        <h2 class="loud-voice">{{ text }}</h2>
+      </div>
 
       <picture class="splash">
         <img :src="`/images/${image}.jpg`" alt="" />

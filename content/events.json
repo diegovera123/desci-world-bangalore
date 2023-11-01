@@ -4,27 +4,27 @@
     "endTime": "11 AM",
     "name": "Opening Ceremony",
     "location": "Main Stage",
-    "link": "google.com"
+    "link": "#"
   },
   {
     "startTime": "11 AM",
     "endTime": "12 PM",
     "name": "Web 3 in India",
     "location": "Room 1",
-    "link": "google.com"
+    "link": "#"
   },
   {
     "startTime": "12 PM",
     "endTime": "1 PM",
     "name": "Event event",
     "location": "Room 2",
-    "link": "google.com"
+    "link": "#"
   },
   {
     "startTime": "1 PM",
     "endTime": "2 PM",
     "name": "Blockchain Event",
     "location": "Main Stage",
-    "link": "google.com"
+    "link": "#"
   }
 ]

@@ -4,7 +4,6 @@
       <mast-head>
         <nav>
           <ul>
-            <li><a href="#hero-landing">Home</a></li>
             <li><a href="#about-section">About</a></li>
             <li><a href="#speaker-section">Speakers</a></li>
             <li><a href="#register">Register</a></li>
@@ -42,7 +41,7 @@ nav a {
 }
 
 .toggle {
-  @media (max-width: 760px) {
+  @media (max-width: 420px) {
     display: none;
   }
 }
