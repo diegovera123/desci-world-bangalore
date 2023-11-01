@@ -14,28 +14,28 @@ function animate() {
   const timeline = gsap.timeline();
 
   //   color path
-  timeline.fromTo(
-    colorPath,
-    {
-      duration: 0,
-      strokeDashoffset: -1 * colorLength,
-      strokeDasharray: colorLength,
-    },
-    {
-      duration: duration,
-      strokeDashoffset: 0,
-      ease: easing,
-    }
-  );
+
+  timeline.set(colorPath, {
+    strokeDashoffset: -1 * colorLength,
+    strokeDasharray: colorLength,
+    opacity: 1,
+  });
+
+  timeline.set(highlightPath, {
+    strokeDashoffset: -1 * highlightLength,
+    strokeDasharray: highlightLength,
+    opacity: 1,
+  });
+
+  timeline.to(colorPath, {
+    duration: duration,
+    strokeDashoffset: 0,
+    ease: easing,
+  });
 
   //   highlight path
-  timeline.fromTo(
+  timeline.to(
     highlightPath,
-    {
-      duration: 0,
-      strokeDashoffset: -1 * highlightLength,
-      strokeDasharray: highlightLength,
-    },
     {
       duration: duration,
       strokeDashoffset: 0,
@@ -49,6 +49,7 @@ function animate() {
     scale: 10,
     opacity: 0,
     transformOrigin: "center",
+    ease: easing,
   });
 
   //   reset
@@ -62,8 +63,9 @@ function animate() {
   timeline.to("div.wrapper", {
     duration: 0.5,
     opacity: 0,
+    //  ease: easing,
     onComplete: () => {
-      document.querySelector("div.wrapper").remove();
+      document.querySelector("footer div.wrapper").remove();
     },
   });
 
@@ -99,7 +101,7 @@ onMounted(() => {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 50%;
+  max-height: 100vmax;
 }
 </style>
 

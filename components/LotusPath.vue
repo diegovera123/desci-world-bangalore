@@ -48,4 +48,8 @@
   </svg>
 </template>
 
-<style scoped></style>
+<style scoped>
+path {
+  opacity: 0;
+}
+</style>
