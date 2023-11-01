@@ -2,10 +2,10 @@
   <Header />
   <main>
     <HeroLanding />
-    <MotivateSection
+    <!-- <MotivateSection
       text="Decentralised Science showcases in Bengaluru"
       image="skyline"
-    />
+    /> -->
 
     <AboutSection />
     <MotivateSection
