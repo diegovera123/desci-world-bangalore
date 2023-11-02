@@ -24,7 +24,7 @@
 picture {
   transition: transform 0.2s ease-in-out;
 }
-picture:hover {
+a:is(:hover, :focus-visible) picture {
   transform: scale(1.1) translateX(5px);
 }
 
