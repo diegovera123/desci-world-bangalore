@@ -8,10 +8,7 @@
     /> -->
 
     <AboutSection />
-    <MotivateSection
-      text="WHERE SCIENCE MEETS THE FUTURE."
-      image="bangalore-motivate"
-    />
+    <MotivateSection text="WHERE SCIENCE MEETS THE FUTURE." image="skyline" />
     <EventSection />
     <SpeakersGrid />
     <RegisterNow />
