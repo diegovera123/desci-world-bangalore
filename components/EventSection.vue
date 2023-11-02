@@ -13,14 +13,15 @@ const events = (await queryContent("events").findOne()).body;
         <li v-for="(event, index) in events" :key="index" class="">
           <text-content>
             <p>
+              {{ event.day }}
+            </p>
+            <p>
               {{ event.startTime }}
             </p>
             <strong>
               {{ event.name }}
             </strong>
-            <p>
-              {{ event.location }}
-            </p>
+            <p>@ {{ event.location }}</p>
           </text-content>
           <NuxtLink :to="event.link">
             <RightArrow class="right-arrow" />
@@ -72,7 +73,7 @@ li {
 text-content {
   @media (min-width: 770px) {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr;
+    grid-template-columns: 0.2fr 0.2fr 1fr 1fr;
   }
 }
 
