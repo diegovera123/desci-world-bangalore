@@ -147,3 +147,8 @@ code {
   font-size: var(--step--1);
   color: green;
 }
+
+mark.invert {
+  filter: invert(1);
+  background: none;
+}
