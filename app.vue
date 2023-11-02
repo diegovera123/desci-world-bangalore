@@ -3,7 +3,7 @@ const meta = {
   url: "https://desci.world",
   title: "World of DeSci: Bengaluru",
   description:
-    "DeSci World is a conference for data scientists and machine learning engineers.",
+    "World of DeSci: Bengaluru is a conference for open scientists and engineers, AI and Web3 advocates and students.",
   image: "/images/meta.jpg",
 };
 
