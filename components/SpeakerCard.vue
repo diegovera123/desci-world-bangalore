@@ -16,6 +16,9 @@ const props = defineProps({
       <h3 class="firm-voice">
         {{ speaker.name }}
       </h3>
+      <p class="solid-voice">
+        {{ speaker.company }}
+      </p>
       <p class="notice-voice">
         {{ speaker.role }}
       </p>
@@ -37,6 +40,10 @@ text-content {
 
 p {
   font-size: var(--step-1);
+}
+
+p + p {
+  margin-top: unset;
 }
 
 picture {
