@@ -101,6 +101,7 @@ p + p {
   flex-wrap: wrap;
 
   @media (min-width: 770px) {
+    align-self: start;
     grid-row: 2;
     grid-column: 2;
     display: grid;
