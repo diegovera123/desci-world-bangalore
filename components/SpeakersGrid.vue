@@ -3,9 +3,9 @@ const speakers = (await queryContent("speakers").findOne()).body;
 </script>
 
 <template>
-  <section id="speaker-section" class="speakers poifnts-white">
+  <section id="speaker-section" class="speakers points-white">
     <inner-column class="wide">
-      <h2 class="loud-voice">Speakers</h2>
+      <h2 class="firm-voice">Speakers</h2>
       <ul class="speakers-grid">
         <SpeakerCard v-for="speaker in speakers" :speaker="speaker" />
       </ul>
