@@ -25,8 +25,8 @@ onMounted(() => {
  
  -->
 
-  <label class="switch">
-    <input type="checkbox" hidden v-model="isLightOn" />
+  <label class="switch" tabindex="0">
+    <input type="checkbox" hidden v-model="isLightOn" tabindex="0" />
     <div class="switch__wrapper">
       <div class="switch__toggle"></div>
     </div>
