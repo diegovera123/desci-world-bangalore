@@ -14,7 +14,7 @@ inner-column {
 }
 
 inner-column.wide {
-  max-width: 1400px; /* could be a variable in settings */
+  max-width: 1500px; /* could be a variable in settings */
 }
 inner-column.ultra-wide {
   max-width: 90%; /* could be a variable in settings */
