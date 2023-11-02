@@ -29,7 +29,7 @@ div.actions {
   }
 }
 
-.button:hover {
+.button:is(:hover, :focus-visible) {
   background-repeat: repeat-x;
   background-position: center right -3em;
   background-blend-mode: luminosity;
@@ -41,6 +41,12 @@ div.actions {
   text-decoration: none;
   padding: 0.25em;
   position: relative;
+}
+
+p :is(a, button).text {
+  padding: unset;
+  display: inline-block;
+  /* padding-bottom: 0.2em; */
 }
 
 :is(a, button).text::before {
@@ -55,7 +61,7 @@ div.actions {
   transition: 0.2s;
 }
 
-:is(a, button).text:hover::before {
+:is(a, button).text:is(:hover, :focus-visible)::before {
   width: 100%;
 }
 
@@ -75,7 +81,7 @@ div.actions {
   transition: 0.2s;
 }
 
-.white-underline:hover::before {
+.white-underline:is(:hover, :focus-visible)::before {
   width: 100%;
 }
 
