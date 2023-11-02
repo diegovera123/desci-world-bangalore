@@ -37,7 +37,7 @@ onMounted(() => {
         <h2 class="booming-voice colored fitty" ref="YearRef">23</h2>
       </div>
       <div>
-        <h2 class="booming-voice fitty" ref="dateRef">3 - 6</h2>
+        <h2 class="booming-voice fitty" ref="dateRef">4 - 5</h2>
       </div>
       <div>
         <h2 class="booming-voice fitty" ref="DecemberRef">December</h2>
