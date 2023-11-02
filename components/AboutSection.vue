@@ -37,10 +37,13 @@ const hypes = ref([
     <inner-column>
       <h2 class="loud-voice">Decentralised Science showcases in Bengaluru</h2>
       <p class="attention-voice">
-        Join us for a captivating <mark class="invert">2-day</mark> rendezvous
-        at India Blockchain Week, in the heart of Bengaluru, where the World of
-        Decentralised Science unfolds before the Indian scientific and web3
-        communities.
+        Join us for a captivating 2-day rendezvous during the
+        <mark class="invert"
+          ><NuxtLink class="text" to="https://indiablockchainweek.com/"
+            >India Blockchain Week</NuxtLink
+          ></mark
+        >, in the heart of Bengaluru, where the World of Decentralised Science
+        unfolds before the Indian scientific and web3 communities.
       </p>
       <ul class="socials">
         <li v-for="social in socials" class="social">
@@ -75,6 +78,7 @@ inner-column {
 h2 {
   text-align: center;
   grid-column: 1 / -1;
+  font-size: var(--step-3);
 }
 
 p {

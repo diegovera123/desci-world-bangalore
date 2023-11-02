@@ -47,6 +47,19 @@ p :is(a, button).text {
   padding: unset;
   display: inline-block;
   /* padding-bottom: 0.2em; */
+
+  @media (max-width: 400px) {
+    display: inline;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 0.2em;
+  }
+}
+
+@media (max-width: 400px) {
+  p :is(a, button).text::before {
+    display: none;
+  }
 }
 
 :is(a, button).text::before {

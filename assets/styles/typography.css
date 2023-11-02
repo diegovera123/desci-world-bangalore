@@ -151,4 +151,8 @@ code {
 mark.invert {
   filter: invert(1);
   background: none;
+
+  @media (prefers-color-scheme: dark) {
+    filter: unset;
+  }
 }
