@@ -23,9 +23,11 @@ const socials = ref([
 ]);
 
 const hypes = ref([
+  "Incubate Bengaluru",
   "Mind-blowing Talks",
   "Cutting-edge Workshops",
-  "Networking",
+  "Tutorage from Experts",
+  "Build your Solutions",
   "Fun",
 ]);
 </script>
@@ -35,8 +37,9 @@ const hypes = ref([
     <inner-column>
       <h2 class="loud-voice">Decentralised Science showcases in Bengaluru</h2>
       <p class="attention-voice">
-        Join us for an exhilarating experience at DeSci Event, Bengaluru where
-        India's rich culture intertwines with cutting-edge technology.
+        Join us for a engaging rendezvous at India Blockchain Week, in the heart
+        of Bengaluru, where the World of Decentralised Science unfolds before
+        the Indian scientific and web3 communities.
       </p>
       <ul class="socials">
         <li v-for="social in socials" class="social">
@@ -60,11 +63,11 @@ section.about {
 inner-column {
   display: grid;
 
-  gap: var(--space-xl);
+  gap: var(--space-2xl);
   justify-content: space-between;
 
   @media (min-width: 770px) {
-    grid-template-columns: 1fr 0.3fr;
+    grid-template-columns: 1fr 0.2fr;
   }
 }
 
@@ -73,7 +76,16 @@ h2 {
   grid-column: 1 / -1;
 }
 
+p {
+  @media (min-width: 770px) {
+    grid-column: 1;
+  }
+}
+
 h2 + p {
+  margin-top: unset;
+}
+p + p {
   margin-top: unset;
 }
 
@@ -84,6 +96,8 @@ h2 + p {
   flex-wrap: wrap;
 
   @media (min-width: 770px) {
+    grid-row: 2;
+    grid-column: 2;
     display: grid;
   }
 }
