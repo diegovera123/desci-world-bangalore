@@ -31,16 +31,16 @@ onMounted(() => {
         <h1 class="booming-voice fitty" ref="DeSciWorldRef">World of DeSci</h1>
       </div>
       <div>
-        <h1 class="booming-voice colored fitty" ref="bangloreRef">Bengaluru</h1>
+        <h2 class="booming-voice colored fitty" ref="bangloreRef">Bengaluru</h2>
       </div>
       <div>
-        <h2 class="booming-voice colored fitty" ref="YearRef">23</h2>
+        <h3 class="booming-voice colored fitty" ref="YearRef">23</h3>
       </div>
       <div>
-        <h2 class="booming-voice fitty" ref="dateRef">4 - 5</h2>
+        <h3 class="booming-voice fitty" ref="dateRef">4 - 5</h3>
       </div>
       <div>
-        <h2 class="booming-voice fitty" ref="DecemberRef">December</h2>
+        <h3 class="booming-voice fitty" ref="DecemberRef">December</h3>
       </div>
     </inner-column>
     <piture class="float quadrant">
