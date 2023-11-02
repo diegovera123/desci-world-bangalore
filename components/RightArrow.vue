@@ -2,10 +2,20 @@
 
 <template>
   <picture>
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 64 64"
+    >
       <path
-        d="M 27.707 16.708 L 18.707 25.708 C 18.317 26.098 17.683 26.098 17.293 25.708 C 16.902 25.317 16.902 24.683 17.293 24.293 L 24.586 17 L 5 17 C 4.448 17 4 16.552 4 16 C 4 15.448 4.448 15 5 15 L 24.586 15 L 17.293 7.708 C 16.902 7.317 16.902 6.683 17.293 6.293 C 17.683 5.902 18.317 5.902 18.707 6.293 L 27.707 15.293 C 27.895 15.48 28.001 15.735 28.001 16 C 28.001 16.265 27.895 16.52 27.707 16.708 Z"
-      ></path>
+        d="M 24 12 L 44 32 L 24 52"
+        fill="transparent"
+        stroke-width="6"
+        stroke="#FFFFFF"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-dasharray=""
+      />
     </svg>
   </picture>
 </template>
@@ -19,7 +29,7 @@ picture:hover {
 }
 
 path {
-  fill: var(--white);
+  stroke: var(--white);
 
   @media (prefers-color-scheme: dark) {
     fill: var(--black);
