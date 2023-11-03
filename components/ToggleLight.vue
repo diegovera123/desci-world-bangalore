@@ -60,6 +60,7 @@ onMounted(() => {
   transform-origin: left center;
   animation: checked__wrapper var(--time) ease-in forwards;
   mix-blend-mode: lighten;
+  
 }
 .switch__wrapper::before,
 .switch__wrapper::after {

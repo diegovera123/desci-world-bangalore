@@ -120,6 +120,7 @@ inner-column {
   left: 10%;
   width: clamp(10px, 25vw, 250px);
   animation: float 10s ease-in-out infinite alternate;
+  z-index: -1;
   /* border-radius: 200px; */
 }
 </style>

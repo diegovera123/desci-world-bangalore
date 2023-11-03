@@ -39,6 +39,7 @@ picture {
   overflow: hidden;
   z-index: -1;
   mix-blend-mode: luminosity;
+
   filter: grayscale(1);
   height: auto;
   width: 100%;
