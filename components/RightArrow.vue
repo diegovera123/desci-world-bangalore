@@ -9,7 +9,7 @@
     >
       <path
         d="M 24 12 L 44 32 L 24 52"
-        fill="transparent"
+        fill="none"
         stroke-width="6"
         stroke="#FFFFFF"
         stroke-linecap="round"
