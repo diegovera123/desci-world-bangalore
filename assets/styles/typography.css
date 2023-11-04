@@ -109,6 +109,7 @@ strong {
 }
 
 .solid-voice {
+  font-family: var(--font1);
   font-size: var(--step--1);
   font-weight: var(--weight-heavy);
   line-height: var(--line-height-body);
