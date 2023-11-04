@@ -1,6 +1,10 @@
 <script setup>
 const socials = ref([
   {
+    name: "Presentation",
+    link: "https://drive.google.com/file/d/1t4aTGJThBM_6ez_wcC_5gmh46j0IcLtn/view?usp=sharing",
+  },
+  {
     name: "X",
     link: "https://x.com/DeSciWorld",
   },
@@ -9,26 +13,22 @@ const socials = ref([
     link: "https://www.linkedin.com/company/desciworld",
   },
   {
-    name: "Instagram",
-    link: "https://www.instagram.com/desciworld/",
-  },
-  {
-    name: "Facebook",
-    link: "https://www.facebook.com/DeSciWorld",
-  },
-  {
     name: "Discord",
     link: "https://discord.gg/3X5YzJ9",
+  },
+  {
+    name: "Telegram",
+    link: "https://t.me/DeSciWorld",
   },
 ]);
 
 const hypes = ref([
-  "Incubate Bengaluru",
-  "Mind-blowing Talks",
-  "Cutting-edge Workshops",
-  "Tutorage from Experts",
-  "Build your Solutions",
-  "Fun",
+  "Incubate DeSci in Bengaluru",
+  "Expert Talks and Panels",
+  "Guided Workshops",
+  "Ideate and Innovate",
+  "Grow your Network",
+  "Have Fun!",
 ]);
 </script>
 
@@ -37,13 +37,14 @@ const hypes = ref([
     <inner-column>
       <h2 class="loud-voice">Decentralised Science showcases in Bengaluru</h2>
       <p class="attention-voice">
-        Join us for a captivating 2-day rendezvous during the
+        Join us for 2 days of exploring the potential of DeSci tooling during
         <mark class="invert"
           ><NuxtLink class="text" to="https://indiablockchainweek.com/"
             >India Blockchain Week</NuxtLink
           ></mark
-        >, in the heart of Bengaluru, where the World of Decentralised Science
-        unfolds before the Indian scientific and web3 communities.
+        >, Academics, students, industry professionals, open science enthusiasts
+        and policymakers can all find utility with this growing technical
+        movement.
       </p>
       <ul class="socials">
         <li v-for="social in socials" class="social">
@@ -127,7 +128,7 @@ ul.hype {
   border-radius: 500px;
 
   padding: 0.5em;
-  padding-left: 2.5em;
+  padding-left: 2em;
 
   background: var(--black);
 
